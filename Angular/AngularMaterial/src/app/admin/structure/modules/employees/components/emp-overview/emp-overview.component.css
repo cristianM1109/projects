@@ -1,0 +1,16 @@
+/* emp-overview.component.css */
+.table-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+mat-form-field {
+  width: 30%;
+}
+.addNewButton {
+  margin-bottom: 20px;
+  padding: 25px;
+}
+.actions {
+  margin: -10px;
+}
