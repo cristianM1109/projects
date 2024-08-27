@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.content{
+   border-collapse: collapse;
+   width: 100%;
+   margin-top: 1rem;
+}
+
+.tableHead{
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.tableHeading{
+    text-align: Left;
+    padding: 0.5rem;
+}
+
+.tableBody{
+    border-top: 1px solid #ccc;
+}
+
+.tableData{
+    padding: 0.5rem;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+
+.items img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.employeeTitle{
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.emplyeeEmail{
+    font-size: 0.85rem;
+    color:#666;
+}
+
+.statusStyle{
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+.roleStyle{
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+
+#formContainer{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#createUserForm label{
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#createUserForm input{
+    width: 300px;
+    padding: 5px;
+    border: 1px,solid,#ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.filterButton{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filterButton button{
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #fc5361;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filterButton button:hover{
+    background-color: #8e3e47;
+}
+
+
+#createButton,#abbandonCreateUserButton,#createButton{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#createButton,#createButton{
+    background-color: #4caf50;
+}
+
+#abbandonCreateUserButton{
+    background-color: red;
+}
+
+
+
+
+

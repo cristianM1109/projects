@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>JSON Server</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">JSON Server</h1>
+    <div class="filterButtons">
+        <span style="font-size: 30px;">Filters: &nbsp</span>
+        <button id="allButton">All Users</button>
+        <button id="activeButton">Active</button>
+        <button id="inactiveButton">Inactive</button>
+        <button id="memberButton">Member</button>
+        <button id="adminButton">Admin</button>
+    </div>
+    <button id="createUserButton">Show User Form</button>
+    <div id="formContainer">
+        <div id="createUserFrom" style="display: none;">
+        <label for="idInput">ID:</label>
+        <input type="text" id="idInput" /><br />
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" /><br />
+        <label for="emailInput">Email:</label>
+        <input type="text" id="emailInput" /><br />
+        <label for="profilePicInput">Profile Pic URL:</label>
+        <input type="text" id="profilePicInput" /><br />
+        <label for="statusInput">Status:</label>
+        <input type="text" id="statusInput" /><br />
+        <label for="roleInput">Role:</label>
+        <input type="text" id="roleInput" /><br />
+        <button id="createButton">Create</button>
+        <button id="abbandonCreateUserButton" type="reset">Abbandon</button>
+        </div>
+    </div>
+    <table class="content">
+      <thead class="tableHead">
+        <tr>
+          <th class="tableHeading">EMPLOYEE</th>
+          <th class="tableHeading">STATUS</th>
+          <th class="tableHeading">ROLE</th>
+          <th class="deleteIcon">Delete</th>
+        </tr>
+      </thead>
+      <tbody class="tableBody" id="tBody">
+        <tr>
+          <td class="tableData">
+            <div class="items">
+              <div class="">
+                <img
+                  src="https://via.placeholder.com/50x50.png"
+                  alt="avatar"
+                  class="imgStyle"
+                />
+              </div>
+            <div>
+            <div class="emplyeeTitle">John Doe</div>
+            <div class="emplyeeEmail">john@emil.com</div>
+            </div>
+            </div>
+          </td>
+          <td class="tableData">
+            <span class="statusStyle">active</span>
+          </td>
+          <td class="tableData">
+            <span class="roleStyle">admin</span>
+          </td>
+          <td class="tableData">
+          <span class="deleteIcon">X</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="./index.js"></script>
+</body>

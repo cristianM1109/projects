@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ProductCRUD</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    </head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit(event)">
+                <label for="productCode">Product Code</label>
+                <input type="text" name="productCode" id="productCode" />
+                <label for="product">Product</label>
+                <input type="text" name="product" id="product" />
+                <label for="quantity">Quantity</label>
+                <input type="text" name="quantity" id="quantity" />
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price" />
+                <div class="form_action--button">
+                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Reset"/>
+                </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="StoreList">
+                    <thead>
+                        <tr>
+                            <th>Product Code</th>
+                            <th>Product</th>
+                            <th>Qunatity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>

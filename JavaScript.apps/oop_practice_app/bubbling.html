@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Propagation Example</title>
+</head>
+<body>
+  <div id="outer">
+    <div id="inner">
+      <button id="button">Click me!</button>
+    </div>
+  </div>
+
+  <script>
+   const outer = document.getElementById("outer");
+   const inner = document.getElementById("inner");
+   const button = document.getElementById("button");
+
+   var i = 0;
+   
+   outer.addEventListener("click",()=>{
+       console.log("outer was clicked: "+i);
+       i+=1;
+   },true);
+
+   inner.addEventListener("click",()=>{
+       console.log("inner was clicked: "+i);
+       i+=1;
+   },true);
+
+   button.addEventListener("click",()=>{
+       fetch("https://jsonplaceholder.typicode.com/posts/1").then((response) => response.json).then((data) => console.log(data)).catch((error) => console.log(error));
+       console.log("button was clicked: "+i);
+       i+=5;
+   });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Mea</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body onresize="handleResize()">
+    <header>
+        <h1>Bun venit pe Pagina Mea</h1>
+        
+        <h1>Resize the window</h1>
+        <p>The window width is <span id="width"></span> pixels.</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Acasă</a></li>
+                <li><a href="#">Despre noi</a></li>
+                <li><a href="#">Servicii</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Despre Noi</h2>
+        <p id="result">Bine ați venit pe Pagina Mea. Suntem dedicați să vă oferim informații utile și interesante.</p>
+        <button type="button" onclick="handleClick()" id="btn">Click me!</button><br>
+        <input type = "text" onkeypress="handleKeyPress(event)">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pagina Mea. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+<script>
+
+buton = document.getElementById("btn");
+heading = document.getElementById("result");
+
+function handleResize(){
+const span = document.getElementById("width");
+    span.textContent = window.innerWidth;
+}
+
+function handleClick(){
+    alert("Button was clicked!")
+}
+
+function handleKeyPress(event){
+   if (event.key == "Enter")
+    alert("Enter was pressed!");
+}
+
+
+buton.addEventListener('click',() =>{
+    buton.textContent = 'Button Clicked!'
+    heading.outerHTML = '<h2><strong>This text was changed by javscript.</strong></h2>'
+})   
+function multiplyBy(factor) {
+  // Funcția interioră este un closure
+  return function(number) {
+    return number * factor;
+  };
+}
+
+// Creare de funcții callback cu factori diferiți
+const multiplyByTwo = multiplyBy(2);
+const multiplyByFive = multiplyBy(5);
+
+const multiplyByFour = multiplyByTwo(2);
+
+// Apelarea funcțiilor callback
+console.log(multiplyByFour(8));   // Va afișa 8 (4 * 2)
+console.log(multiplyByFive(3));  // Va afișa 15 (3 * 5)
+ 
+
+function toCelsius(temp){
+        return (5/9)*(temp-32)
+}
+
+</script>
+</html>

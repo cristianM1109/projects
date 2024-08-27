@@ -1,0 +1,12 @@
+{
+  "user": [
+    {
+      "id": "5000",
+      "name": "Gigi Becali",
+      "email": "gigi@beacali.com",
+      "profilePic": "https://via.placeholder.com/50x50.png",
+      "status": "active",
+      "role": "Admin"
+    }
+  ]
+}

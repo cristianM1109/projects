@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Propagation Example</title>
+</head>
+<body>
+  
+   <h1>Event Loop</h1>
+
+
+  <script>
+  const http = require("http");
+  const server = http.createServer((request,response) =>{
+    console.Log('Received request for ${request.url}');
+    response.writeHead(200,{'Content-Type':'Text/plain'});
+    response.write('Hello,world!');
+    response.end();
+  });
+  server.listen(3000, ()=>{
+    console.log('Server started at port 3000');
+  })
+
+  </script>
+</body>
+</html>
