@@ -1,0 +1,12 @@
+<app-demo></app-demo>
+<app-custumer-list #customer></app-custumer-list>
+<p>
+  You have selected {{ customer.selectedCustomer.name }}
+</p>
+
+<div>
+  <label>Date of Birth:</label>
+  <input type="date" #dobInput (blur)="calculateAge()" />
+  <label>Calculated Age:</label>
+  <input type="text" disabled #ageInput />
+</div>
