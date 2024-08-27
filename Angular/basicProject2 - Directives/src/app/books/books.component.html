@@ -1,0 +1,45 @@
+<div>
+  <div>
+    <app-search (searchTextChanged)="onSearchTextEntered($event)"> </app-search>
+    <app-filter
+      [all]="getTotalBooks()"
+      [free]="getTotalFreeBeginnerBooks()"
+      [medium]="getTotalMediumBooks()"
+      [advanced]="getTotalAdvancedBooks()"
+      (filterRadioButtonSelectionChanged)="onFilterRadioButtonChanged($event)"
+    ></app-filter>
+  </div>
+  <ng-container *ngFor="let book of newBookList">
+    <div
+      class="books-container"
+      *ngIf="
+        bookCountRadioButton === 'All' || bookCountRadioButton === book.type
+      "
+    >
+        <div class="book-card">
+          <div>
+            <img [src]="book.image" style="width: 250px; height: 160px" />
+          </div>
+          <div class="book-name">
+            <h4>{{ book.name }}</h4>
+          </div>
+          <div class="book-description">
+            <p>{{ book.description.slice(0, 75) }}...</p>
+          </div>
+          <div class="details">
+            <div
+              class="book-type"
+              [ngStyle]="{ color: book.type === 'Beginner' ? 'Green' : 'Red' }"
+            >
+              {{ book.type }}
+            </div>
+            <div class="book-price"><b>Price:</b> ${{ book.price }}</div>
+          </div>
+          <div class="book-buttons">
+            <button class="btn btn-buy">Buy Now</button>
+            <button class="btn btn-show">Book Description</button>
+          </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

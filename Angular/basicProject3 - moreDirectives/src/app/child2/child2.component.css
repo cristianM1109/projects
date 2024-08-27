@@ -1,0 +1,6 @@
+.app-component-div {
+  background-color: beige;
+}
+.grandChild {
+  display: flex;
+}

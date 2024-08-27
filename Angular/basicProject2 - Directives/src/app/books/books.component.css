@@ -1,0 +1,38 @@
+.books-container {
+  display: inline-flex;
+  float: left;
+}
+.book-card {
+  width: 250px;
+  height: 350px;
+  margin: 10px 10px;
+  background-color: lightsalmon;
+}
+.book-name {
+  text-align: center;
+}
+.book-description {
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.details {
+  display: flex;
+  margin: 10px 0px;
+}
+.book-type {
+  width: 50%;
+  font-weight: bold;
+}
+.btn {
+  width: 140px;
+  height: 30px;
+  border: none;
+  margin: 5px 3px;
+}
+.btn-buy {
+  background-color: #ec7063;
+}
+.btn-show {
+  background-color: #abebc6;
+}
