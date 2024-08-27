@@ -1,0 +1,84 @@
+<div class="form" [ngClass]="formStatus">
+  <h2 id="registration">Registration Form</h2>
+  <form [formGroup]="reactiveForm" (ngSubmit)="OnSubmit()">
+    <div class="container" formGroupName="fullName">
+      <div class="inline">
+        <label for="fname">FirstName</label>
+        <input type="text" id="fname" placeholder="Your name.." formControlName="firstName"/>
+        <div style="color: red; position: relative; top: -5px; line-height: 15px;">
+          <small *ngIf="reactiveForm.get('fullName.firstName')?.errors?.['required'] && reactiveForm.get('fullName.firstName')!.touched">FirstName is a required field.</small>
+          <small *ngIf="reactiveForm.get('fullName.firstName')?.errors?.['noSpaceAllowed']">First Name cannot contain a space.</small>
+        </div>
+      </div>
+      <div class="inline" style="padding-left: 10px">
+        <label for="lname">LastName</label>
+        <input type="text" id="lname" placeholder="Your LastName.." formControlName="lastName"/>
+      </div>
+    </div>
+    <div class="container">
+      <div style="width: 245px; display: inline-block; padding-right: 10px">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your last email.." formControlName="email"/>
+      </div>
+      <div style="width: 145px; display: inline-block">
+        <label for="country">Country</label>
+        <select id="country" name="country" formControlName="country">
+          <option value="romania">Romania</option>
+          <option value="germany">Germany</option>
+          <option value="usa">USA</option>
+          <option value="greece">Greece</option>
+          <option value="monteNegro">Monte Negro</option>
+        </select>
+      </div>
+    </div>
+    <div *ngIf="!reactiveForm.get('email')!.valid && reactiveForm.get('email')!.touched" style="width: 245px; display: block; color: red">
+       <span>The entered email is not a valid one!</span>
+      </div>
+      <div class="container">
+         <input type="password" formControlName="password" />
+        </div>
+        <div style="color: red; font-size: 15px">
+          <ul
+           *ngIf="
+          reactiveForm.get('password')?.errors?.['requirementsNotMet'] 
+          && reactiveForm.get('password')!.touched"
+           >
+           <li>Password must contain at least 1 lower case letter</li>
+           <li>Password must contain at least 1 upper case letter</li>
+           <li>Password must contain at least 1 number</li>
+           <li>Follwing Characters are not allowed: ! ? *</li>
+          </ul>
+          </div>
+    <div style="padding-top: 10px">
+      <label style="display: block" for="gender"><b>Gender:</b></label>
+      <input type="radio" id="male" value="male" formControlName="gender" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" value="female" formControlName="gender"/>
+      <label for="female">Female</label>
+      <input type="radio" id="other" value="other" formControlName="gender"/>
+      <label for="other">Other</label>
+      <br /><br />
+      <label
+        ><b>Hobbies <i>(Optional)</i></b></label
+      >
+      <div class="form-inline">
+        <label><input type="checkbox" value="sports" formControlName="hobbies"/> Sports</label>
+        <label><input type="checkbox" value="movies" formControlName="hobbies"/> Movies</label>
+        <label><input type="checkbox" value="music" formControlName="hobbies"/> Music</label>
+      </div>
+    </div>
+    <div formArrayName="skills">
+      <ng-container *ngFor="let skill of skillsArray; index as i">
+      <input type="text" placeholder="add skill.." formControlName="{{ i }}" required>
+    </ng-container>
+    <button 
+       (click)="addSkills()"
+       class="add-skill-button">
+       + Add Skill
+     </button>
+    
+    </div>
+      
+    <input type="submit" value="Submit" id="btn" />
+  </form>
+</div>

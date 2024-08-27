@@ -1,0 +1,130 @@
+<div class="form">
+  <h2 id="registration">Registration Form</h2>
+  <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+    <div
+      class="container"
+      ngModelGroup="fullName"
+      #fullNameRefVar="ngModelGroup"
+    >
+      <div class="inline">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          placeholder="Your name.."
+          name="firstName"
+          ngModel
+          required
+          #fName="ngModel"
+        />
+        <div *ngIf="fName.touched && fName.invalid">
+          <small>First Name is a required field!</small>
+        </div>
+      </div>
+      <div class="inline" style="padding-left: 10px">
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          placeholder="Your last name.."
+          name="lastName"
+          ngModel
+          required
+          #lName="ngModel"
+        />
+        <div *ngIf="lName.invalid && lName.touched">
+          <small>Last Name is a required field!</small>
+        </div>
+      </div>
+    </div>
+    <div
+      style="display: flex; justify-content: center"
+      *ngIf="fullNameRefVar.touched && fullNameRefVar.invalid"
+    >
+      <small>We will need your whole name!</small>
+    </div>
+    <div class="container">
+      <div style="width: 245px; display: inline-block; padding-right: 10px">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Your last email.."
+          name="email"
+          ngModel
+          required
+          email
+          #email="ngModel"
+        />
+        <div *ngIf="email.invalid && email.touched">
+          <small>Email is a required field!</small>
+        </div>
+      </div>
+      <div style="width: 145px; display: inline-block">
+        <label for="country">Country</label>
+        <select
+          id="country"
+          name="country"
+          name="country"
+          [(ngModel)]="defaultCountry"
+        >
+          <option value="romania">Romania</option>
+          <option value="germany">Germany</option>
+          <option value="usa">USA</option>
+          <option value="greece">Greece</option>
+          <option value="monteNegro">Monte Negro</option>
+        </select>
+      </div>
+    </div>
+    <div style="padding-top: 10px">
+      <label style="display: block" for="gender"><b>Gender:</b></label>
+      <span *ngFor="let gender of genders">
+        <input
+          type="radio"
+          id="{{ gender.id }}"
+          value="{{ gender.value }}"
+          checked
+          name="gender"
+          [(ngModel)]="defaultGender"
+        />
+        <label for="male">{{ gender.value }}</label>
+      </span>
+      <br /><br />
+      <button type="button" (click)="showRegistrationExample()">
+        Show Registration Example</button>
+      <label
+        ><b>Hobbies <i>(Optional)</i></b></label
+      >
+      <div class="form-inline">
+        <label
+          ><input type="checkbox" value="sports" name="hobbies" ngModel />
+          Sports</label
+        >
+        <label
+          ><input type="checkbox" value="movies" name="hobbies" ngModel />
+          Movies</label
+        >
+        <label
+          ><input type="checkbox" value="music" name="hobbies" ngModel />
+          Music</label
+        >
+      </div>
+    </div>
+    <input type="submit" value="Submit" id="btn" [disabled]="!myForm.valid" />
+  </form>
+</div>
+
+<h1 style="display: flex; justify-content: center">Entered Registrations</h1>
+<div style="display: flex; flex-wrap: wrap; justify-content: center">
+  <ng-container *ngFor="let reg of registrations">
+  <div class="card">
+    <div class="form-data">
+      <p><strong>First Name:</strong> {{ reg.fullName.firstName }} </p>
+      <p><strong>Last Name:</strong> {{ reg.fullName.lastName }} </p>
+      <p><strong>Email:</strong> {{ reg.email }} </p>
+      <p><strong>Country:</strong> {{ reg.country }} </p>
+      <p><strong>Gender:</strong> {{ getGenderString(reg.gender) }} </p>
+    </div>
+  </div>
+</ng-container>
+</div>
