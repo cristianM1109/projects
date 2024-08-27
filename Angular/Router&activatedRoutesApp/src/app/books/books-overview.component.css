@@ -1,0 +1,67 @@
+.container {
+  margin: 10px 0px;
+  padding: 10px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.book-container {
+  display: inline-flex;
+}
+
+.all-books {
+  padding: 40px;
+  text-align: center;
+  color: #51899b;
+}
+
+.book-card {
+  width: 220px;
+  height: 320px;
+  margin: 10px 10px;
+  background-color: #f8f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book-name {
+  justify-content: center;
+}
+.book-description {
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.details {
+  display: flex;
+  margin: 10px 0px;
+}
+.book-type {
+  position: relative;
+  right: 10px;
+  width: 40%;
+  font-weight: bold;
+}
+.all-books {
+  margin-top: 20px;
+}
+.kid {
+  position: relative;
+  left: 10px;
+}
+.book-buttons {
+  display: flex;
+}
+.btn {
+  width: 110px;
+  height: 30px;
+  border: none;
+  align-self: flex-end;
+}
+.btn-buy {
+  background-color: #ec7063;
+}
+.btn-show {
+  background-color: #abebc6;
+}

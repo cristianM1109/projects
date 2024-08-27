@@ -1,0 +1,70 @@
+{
+  "employeeReg": [
+    {
+      "id": "9bba",
+      "firstName": "Cristian-Mihai",
+      "lastName": "Ghiusii",
+      "email": "cristi_12hd@yahoo.com",
+      "dob": "2024-07-22T21:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelor",
+      "experience": "Senior Manager",
+      "salary": 13123
+    },
+    {
+      "firstName": "Viorica",
+      "lastName": "Vicenzo",
+      "email": "aoleo@mail.com",
+      "dob": "2024-07-25T21:00:00.000Z",
+      "gender": "male",
+      "education": "Master",
+      "experience": "Manager",
+      "salary": 123121,
+      "id": "cbce"
+    },
+    {
+      "id": "daaa",
+      "firstName": "Maraciuca",
+      "lastName": "Violet",
+      "email": "vio@vio.com",
+      "dob": "2024-07-22T21:00:00.000Z",
+      "gender": "male",
+      "education": "Bachelor",
+      "experience": "Manager",
+      "salary": 12312
+    },
+    {
+      "id": "58d7",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "experience": "",
+      "salary": ""
+    },
+    {
+      "id": "f359",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "experience": "",
+      "salary": ""
+    },
+    {
+      "id": "fb78",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "experience": "",
+      "salary": ""
+    }
+  ]
+}

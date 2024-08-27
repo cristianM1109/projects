@@ -1,0 +1,29 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #navbar mode="side" opened>
+    <app-navbar></app-navbar>
+  </mat-sidenav>
+  <mat-sidenav-content
+    ><mat-toolbar>
+      <mat-icon (click)="navbar.toggle()"> menu</mat-icon>
+
+      <h3>{{ pageTitle }}</h3>
+
+      <div style="margin-top: 10px">
+        <mat-icon>search</mat-icon>
+        <mat-icon>favorite</mat-icon>
+        <mat-icon>share</mat-icon>
+        <mat-icon
+          mat-fab
+          color="warn"
+          style="transform: scale(1.5)"
+          routerLink="employees"
+          >supervised_user_circle
+        </mat-icon>
+      </div>
+    </mat-toolbar>
+    <!-- Main content -->
+    <div style="margin: 30px">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

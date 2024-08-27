@@ -1,0 +1,82 @@
+<div mat-dialog-title>
+  <h1 style="font-size: large;">{{!data ? 'Add New Employee' : 'Update Employee'}}</h1>
+</div>
+<!-- nem-new-edit.component.html -->
+<form [formGroup]="employeeFrom" 
+	(ngSubmit)="onSubmit()">
+<div mat-dialog-content class="content">
+  <!-- Name -->
+  <div class="row">
+    <mat-form-field>
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" />
+    </mat-form-field>
+  </div>
+  <!-- Email DOB -->
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="test@test.com" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Date of Birth</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dob" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <!-- Gender -->
+  <div class="row">
+    <mat-radio-group formControlName="gender">
+      <mat-label><b>Gender:</b></mat-label>
+      <mat-radio-button value="male">
+        <span class="genderSel">Male</span>
+      </mat-radio-button>
+      <mat-radio-button value="female">
+        <span class="genderSel">Female</span>
+      </mat-radio-button>
+      <mat-radio-button value="other">
+        <span class="genderSel">Other</span>
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <!-- Education Experience -->
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Education Level</mat-label>
+      <mat-select formControlName="education">
+        <mat-option *ngFor="let ed of education" [value]="ed">
+          {{ ed }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Experience Level</mat-label>
+      <mat-select formControlName="experience">
+        <mat-option *ngFor="let ex of experience" [value]="ex">
+          {{ ex }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <!-- Honorary -->
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Salary in €</mat-label>
+      <input matInput type="number" formControlName="salary" />
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions class="actions">
+    <button mat-raised-button type="button" mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" type="submit">{{!data? 'Save' : 'Update'}}</button>
+  </div>
+</div>
+</form>

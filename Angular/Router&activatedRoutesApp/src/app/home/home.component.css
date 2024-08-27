@@ -1,0 +1,53 @@
+.container {
+  margin: 10px 0px;
+  padding: 10px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.book-container {
+  display: inline-flex;
+}
+.popular-books{
+  padding: 40px;
+  text-align: center;
+  color: #51899b;
+}
+.book-card {
+  width: 220px;
+  height: 320px;
+  margin: 10px 10px;
+  background-color: #f8f9f9;
+}
+.book-name {
+  text-align: center;
+}
+.book-description {
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.details {
+  display: flex;
+  margin: 10px 0px;
+}
+.book-type {
+  width: 50%;
+  font-weight: bold;
+}
+.book-buttons {
+  display: flex;
+}
+.btn {
+  width: 140px;
+  height: 30px;
+  border: none;
+  margin: 5px 3px;
+}
+.btn-buy {
+  background-color: #ec7063;
+}
+.btn-show {
+  background-color: #abebc6;
+}

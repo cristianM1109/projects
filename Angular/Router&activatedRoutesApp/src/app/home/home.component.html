@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="hero-section">
+    <img src="books.jpg" width="940" height="300px"/>
+  </div>
+  <div>
+    <h1 class="popular-books">Popular books</h1>
+    <hr style="border: #ccc 2px solid; margin: 5px 0px" />
+    <ng-container *ngFor="let book of books">
+      <div class="book-container" *ngIf="book.ratings >= 4.5">
+        <div class="book-card">
+          <div>
+            <img [src]="book.image" style="width: 220px; height: 140px" />
+          </div>
+          <div class="book-name">
+            <h4>{{ book.name }}</h4>
+          </div>
+          <div class="book-description">
+            <p>{{ book.description.slice(0, 80) }}...</p>
+          </div>
+          <div class="details">
+            <div
+              class="book-type"
+              [ngStyle]="{ color: book.type === 'Beginner' ? 'Green' : 'Red' }"
+            >
+              {{ book.type }}
+            </div>
+            <div class="book-price"><b>Price:</b> ${{ book.price }}</div>
+          </div>
+          <div class="book-buttons">
+            <button class="btn btn-buy">Buy Now</button>
+            <button class="btn btn-show">Show Deatils</button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

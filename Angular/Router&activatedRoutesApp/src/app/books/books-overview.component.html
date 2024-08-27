@@ -1,0 +1,37 @@
+<div class="container">
+  <div style="text-align: center" class="all-books">
+    <h1>All your favorite books</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>
+      Resize the browser window to see that this page is responsive by the way.
+    </p>
+  </div>
+  <ng-container *ngFor="let book of books">
+    <div class="book-container">
+      <div class="book-card">
+        <div>
+          <img [src]="book.image" style="width: 220px; height: 140px" />
+        </div>
+        <div class="book-name">
+          <h4>{{ book.name }}</h4>
+        </div>
+        <div class="book-description">
+          <p>{{ book.description.slice(0, 80) }}...</p>
+        </div>
+        <div class="details">
+          <div
+            class="book-type"
+            [ngStyle]="{ color: book.type === 'Beginner' ? 'Green' : 'Red' }"
+          >
+            {{ book.type }}
+          </div>
+          <div class="book-price kid"><b>Price:</b> ${{ book.price }}</div>
+        </div>
+        <div class="book-buttons">
+          <button class="btn btn-buy">Buy Now</button>
+          <button class="btn btn-show" routerLink="/books/book/{{book.id}}">Show Deatils</button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

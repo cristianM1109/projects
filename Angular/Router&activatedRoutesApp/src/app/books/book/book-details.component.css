@@ -1,0 +1,42 @@
+.book-container {
+  width: 580px;
+  margin: 20px auto;
+  padding: 10px 10px;
+  background-color: #fff;
+}
+.name {
+  text-align: center;
+  margin-top: 20px;
+}
+.book-details {
+  display: flex;
+  margin: 20px 0px;
+  text-align: center;
+  justify-content: space-between;
+}
+input {
+  width: 100%;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+}
+button {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+button:hover {
+  background-color: #51899b;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+.actions {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}

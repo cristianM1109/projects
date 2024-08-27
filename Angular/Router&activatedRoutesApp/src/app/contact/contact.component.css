@@ -1,0 +1,45 @@
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.contact-us {
+  padding: 40px;
+  text-align: center;
+  color: #51899b;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
