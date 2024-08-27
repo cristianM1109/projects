@@ -1,0 +1,2 @@
+rootProject.name = "HEPR Time Manager"
+include ':app'

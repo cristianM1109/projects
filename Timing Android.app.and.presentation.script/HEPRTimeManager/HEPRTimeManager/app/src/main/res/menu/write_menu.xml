@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/riderA"
+        android:title="Clasa A"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/riderB"
+        android:title="Clasa B"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/riderC"
+        android:title="Clasa C"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/riderFete"
+        android:title="Clasa Fete"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/riderVeterani"
+        android:title="Clasa Veterani"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/all_btn"
+        android:title="All Riders"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/delete_all_riders"
+        android:title="Delete all riders"
+        app:showAsAction="never"/>
+
+</menu>

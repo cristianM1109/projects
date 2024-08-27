@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/day_1"
+        android:title="Day 1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/day_2"
+        android:title="Day 2"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/day_3"
+        android:title="Day 3"
+        app:showAsAction="never"/>
+
+</menu>

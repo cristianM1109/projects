@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/a"
+        android:title="Clasa A"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/b"
+        android:title="Clasa B"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/c"
+        android:title="Clasa C"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/fete"
+        android:title="Fete"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/veterani"
+        android:title="Veterani"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/all"
+        android:title="All"
+        app:showAsAction="never" />
+
+</menu>

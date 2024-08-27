@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/drawable/border.xml" value="0.24027777777777778" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/drawable/ic_account.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/drawable/ic_lock.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/drawable/ic_person.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/drawable/round_bg.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/drawable/round_border.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/drawable/wave.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_add_rider.xml" value="0.2" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_delete_all_events.xml" value="0.2" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_log_in.xml" value="0.176" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_read_nfcactivity.xml" value="0.152" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_read_not_assigned.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_read_pass.xml" value="0.2" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_select_cpday.xml" value="0.264" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_sync.xml" value="0.264" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_sync_events.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_view_events.xml" value="0.264" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_view_select_config.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/activity_write_tag.xml" value="0.264" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/dropdwon_item.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/event_item.xml" value="0.4" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/layout/rider_item.xml" value="0.264" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/menu/add_rider_menu.xml" value="0.12477477477477478" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/menu/cp_day.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/menu/event_class.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/menu/log_out.xml" value="0.14427083333333332" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/menu/readnfc_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/menu/write_menu.xml" value="0.12477477477477478" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24027777777777778" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/HEPRTimeManager/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.24027777777777778" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

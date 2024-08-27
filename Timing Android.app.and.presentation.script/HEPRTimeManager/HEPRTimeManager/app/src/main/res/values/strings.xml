@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">HEPR Time Manager</string>
+
+    <string-array name="catgory">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>Fete</item>
+        <item>Veterani</item>
+    </string-array>
+
+    <string-array name="CP">
+        <item>Start</item>
+        <item>CP 1</item>
+        <item>CP 2</item>
+        <item>CP 3</item>
+        <item>CP 4</item>
+        <item>CP 5</item>
+        <item>CP 6</item>
+        <item>CP 7</item>
+        <item>CP 8</item>
+        <item>CP 9</item>
+        <item>CP 10</item>
+        <item>CP 11</item>
+        <item>CP 12</item>
+        <item>CP 13</item>
+        <item>CP 14</item>
+        <item>CP 15</item>
+        <item>Finish</item>
+    </string-array>
+
+    <string-array name="Day">
+        <item>Day 1</item>
+        <item>Day 2</item>
+        <item>Day 3</item>
+    </string-array>
+
+</resources>
