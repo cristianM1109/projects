@@ -24,7 +24,7 @@ Jest (for unit testing)
 Installation
 Clone the repository:
 git clone https://github.com/cristianM1109/projects/tree/main/interview-react-node/server
-cd react-node-interview/server
+cd interview-react-node/server
 
 Install dependencies:
 
