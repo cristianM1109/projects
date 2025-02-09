@@ -1,19 +1,18 @@
-// prisma/seed.ts
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
 async function main() {
-  // Crează un utilizator
+  
   const user = await prisma.user.create({
     data: {
       email: 'test1@user.com',
-      password: 'password', // Asigură-te că parola este criptată într-un proiect real
+      password: 'password', 
       name: 'Test User',
     },
   })
 
-  // Crează facturi pentru utilizator
+ 
   await prisma.invoice.createMany({
     data: [
       { vendorName: 'Vendor 1', amount: 100.0, dueDate: new Date('2025-02-10'), description: 'Factură pentru serviciu 1', userId: user.id },
