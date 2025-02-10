@@ -52,6 +52,10 @@ API Endpoints
 Authentication
 POST /auth/login - Login and receive a JWT token
 
+Test Credentials
+email: "test@user.com",
+password: "password"
+
 Invoices
 GET /invoices - Get a paginated list of invoices
 GET /invoices/:id - Fetch details of a specific invoice
