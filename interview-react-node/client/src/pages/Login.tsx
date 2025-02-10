@@ -4,9 +4,12 @@ import { loginSchema, LoginFormData } from "../utils/validation";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setToken } from "../store/slices/authSlice";
 
 const Login = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [error, setError] = useState("");
 
   const {
@@ -22,7 +25,7 @@ const Login = () => {
 
     try {
       const response = await axios.post("http://localhost:3000/auth/login", data);
-      localStorage.setItem("token", response.data.access_token);
+      dispatch(setToken(response.data.access_token));
       axios.defaults.headers.common["Authorization"] = `Bearer ${response.data.token}`;
       navigate("/invoices");
     } catch (err) {
