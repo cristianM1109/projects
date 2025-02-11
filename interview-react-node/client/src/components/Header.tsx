@@ -30,7 +30,7 @@ const Header = () => {
         <Settings size={20} className="text-gray-500 hover:text-indigo-500 cursor-pointer" />
         <Moon size={20} className="text-gray-500 hover:text-indigo-500 cursor-pointer" />
         <img
-          src="src/components/pic.png"
+          src="pic.png"
           alt="User Avatar"
           className="w-10 h-10 rounded-full border border-gray-300 shadow-sm"
         />
