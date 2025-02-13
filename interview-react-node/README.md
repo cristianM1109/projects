@@ -12,8 +12,9 @@ PostgreSQL database
 Automated testing with Playwright
 Installation & Running
 
-Clone the repository
-git clone https://github.com/cristianM1109/projects/tree/main/interview-react-node
+Clone the repository 
+git clone: https://github.com/cristianM1109/projects.git
+or download https://github.com/cristianM1109/projects/tree/main/interview-react-node
 cd project
 
 Running with Docker (Recommended)
